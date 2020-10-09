@@ -1,15 +1,19 @@
 package com.wang.springcloud.controller;
 
 import com.wang.springcloud.pojo.Dept;
+import io.swagger.annotations.ApiModel;
+import io.swagger.annotations.ApiOperation;
+import io.swagger.annotations.ApiParam;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.client.RestTemplate;
 
 import java.util.List;
 
+@ApiModel("Consumer Controller")
 @RestController
 public class DeptConsumerController {
     //消费者, 不应该有service层!(为了实现解耦)
@@ -25,18 +29,21 @@ public class DeptConsumerController {
     //这里去http://localhost:8001/dept/{id}这个url拿数据
     //由于前缀是固定的, 我们这里利用常量写死
     private static final String REST_URL_PREFIX = "http://localhost:8001";
-    @RequestMapping("/consumer/dept/get/{id}")
-    public Dept get(@PathVariable("id") Long id) {
+    @ApiOperation("通过部门编号查询一个部门")
+    @RequestMapping(value = "/consumer/dept/get/{id}", method = RequestMethod.GET)
+    public Dept get(@PathVariable("id") @ApiParam("部门编号") Long id) {
         //由于我们在provider中的list是get方法, 这里调用getForObject方法
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/get/" + id, Dept.class);
     }
 
-    @RequestMapping("/consumer/dept/add")
-    public boolean add(Dept dept){
+    @ApiOperation("通过部门名称添加一个部门")
+    @RequestMapping(value = "/consumer/dept/add", method = RequestMethod.POST)
+    public boolean add(@ApiParam("部门的名称") Dept dept){
         return restTemplate.postForObject(REST_URL_PREFIX + "/dept/add", dept, Boolean.class);
     }
 
-    @RequestMapping("consumer/dept/list")
+    @ApiOperation("查询全部的部门")
+    @RequestMapping(value = "consumer/dept/list", method = RequestMethod.GET)
     public List<Dept> list() {
         return restTemplate.getForObject(REST_URL_PREFIX + "/dept/list", List.class);
     }

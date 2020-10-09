@@ -24,6 +24,7 @@
         <junit.version>4.12</junit.version>
         <lombok.version>1.18.12</lombok.version>
         <log4j.version>1.2.17</log4j.version>
+        <swagger.version>3.0.0</swagger.version>
     </properties>
 
     <!--dependencyManagement是个管理, 不会导入库-->
@@ -86,6 +87,13 @@
                 <groupId>ch.qos.logback</groupId>
                 <artifactId>logback-core</artifactId>
                 <version>1.2.3</version>
+            </dependency>
+            <!--swagger2-->
+            <!-- https://mvnrepository.com/artifact/io.springfox/springfox-swagger2 -->
+            <dependency>
+                <groupId>io.springfox</groupId>
+                <artifactId>springfox-boot-starter</artifactId>
+                <version>${swagger.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>
