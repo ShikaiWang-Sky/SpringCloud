@@ -1,7 +1,6 @@
 package com.wang.springcloud.service;
 
 import com.wang.springcloud.dao.DeptDao;
-import com.wang.springcloud.dao.DeptService;
 import com.wang.springcloud.pojo.Dept;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;

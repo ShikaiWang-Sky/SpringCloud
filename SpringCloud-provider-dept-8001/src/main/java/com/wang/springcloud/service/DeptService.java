@@ -1,8 +1,6 @@
-package com.wang.springcloud.dao;
+package com.wang.springcloud.service;
 
 import com.wang.springcloud.pojo.Dept;
-import org.apache.ibatis.annotations.Mapper;
-import org.springframework.stereotype.Repository;
 
 import java.util.List;
 

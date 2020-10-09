@@ -7,6 +7,7 @@ import lombok.experimental.Accessors;
 import java.io.Serializable;
 
 @Data
+@NoArgsConstructor
 //支持链式写法
 @Accessors(chain = true)
 public class Dept implements Serializable {
@@ -18,32 +19,5 @@ public class Dept implements Serializable {
 
     public Dept(String dname) {
         this.dname = dname;
-    }
-
-    public Dept() {
-    }
-
-    public Long getDeptno() {
-        return deptno;
-    }
-
-    public void setDeptno(Long deptno) {
-        this.deptno = deptno;
-    }
-
-    public String getDname() {
-        return dname;
-    }
-
-    public void setDname(String dname) {
-        this.dname = dname;
-    }
-
-    public String getDb_source() {
-        return db_source;
-    }
-
-    public void setDb_source(String db_source) {
-        this.db_source = db_source;
     }
 }

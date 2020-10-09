@@ -1,7 +1,7 @@
 package com.wang.springcloud.controller;
 
-import com.wang.springcloud.dao.DeptService;
 import com.wang.springcloud.pojo.Dept;
+import com.wang.springcloud.service.DeptService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
