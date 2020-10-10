@@ -14,6 +14,9 @@
         <module>SpringCloud-Eureka-7001</module>
         <module>SpringCloud-Eureka-7002</module>
         <module>SpringCloud-Eureka-7003</module>
+        <module>SpringCloud-consumer-dept-8002</module>
+        <module>SpringCloud-provider-dept-8002</module>
+        <module>SpringCloud-provider-dept-8003</module>
     </modules>
 
     <!--打包方式 pom-->

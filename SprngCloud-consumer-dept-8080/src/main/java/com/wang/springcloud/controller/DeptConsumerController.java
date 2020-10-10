@@ -28,7 +28,10 @@ public class DeptConsumerController {
 
     //这里去http://localhost:8001/dept/{id}这个url拿数据
     //由于前缀是固定的, 我们这里利用常量写死
-    private static final String REST_URL_PREFIX = "http://localhost:8001";
+//    private static final String REST_URL_PREFIX = "http://localhost:8001";
+
+    //通过Ribbon, 我们这里的地址应该是一个变量, 不要写死, 通过服务名来访问（provider的spring.applicatoion.name的大写), 不要忘了写http://
+    private static final String REST_URL_PREFIX = "http://SPRINGCLOUD-PROVIDER-DEPT";
     @ApiOperation("通过部门编号查询一个部门")
     @RequestMapping(value = "/consumer/dept/get/{id}", method = RequestMethod.GET)
     public Dept get(@PathVariable("id") @ApiParam("部门编号") Long id) {
