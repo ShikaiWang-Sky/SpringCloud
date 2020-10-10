@@ -11,6 +11,9 @@
         <module>SpringCloud-API</module>
         <module>SpringCloud-provider-dept-8001</module>
         <module>SprngCloud-consumer-dept-8080</module>
+        <module>SpringCloud-Eureka-7001</module>
+        <module>SpringCloud-Eureka-7002</module>
+        <module>SpringCloud-Eureka-7003</module>
     </modules>
 
     <!--打包方式 pom-->
@@ -34,7 +37,7 @@
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
                 <artifactId>spring-cloud-dependencies</artifactId>
-                <version>Greenwich.SR1</version>
+                <version>Hoxton.SR1</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>
