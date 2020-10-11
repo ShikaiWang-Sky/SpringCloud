@@ -10,11 +10,10 @@
     <modules>
         <module>SpringCloud-API</module>
         <module>SpringCloud-provider-dept-8001</module>
-        <module>SprngCloud-consumer-dept-8080</module>
+        <module>SpringCloud-consumer-dept-8080</module>
         <module>SpringCloud-Eureka-7001</module>
         <module>SpringCloud-Eureka-7002</module>
         <module>SpringCloud-Eureka-7003</module>
-        <module>SpringCloud-consumer-dept-8002</module>
         <module>SpringCloud-provider-dept-8002</module>
         <module>SpringCloud-provider-dept-8003</module>
     </modules>
