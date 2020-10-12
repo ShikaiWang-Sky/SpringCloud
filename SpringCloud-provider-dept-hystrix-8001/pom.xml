@@ -9,7 +9,7 @@
     </parent>
     <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>SpringCloud-provider-dept-8001</artifactId>
+    <artifactId>SpringCloud-provider-dept-hystrix-8001</artifactId>
 
     <dependencies>
         <!--我们需要拿到实体类, 所以要配置api module-->
@@ -81,6 +81,5 @@
             <version>1.4.6.RELEASE</version>
         </dependency>
     </dependencies>
-
 
 </project>
