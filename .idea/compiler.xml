@@ -15,6 +15,7 @@
         <module name="SpringCloud-API" />
         <module name="SpringCloud-consumer-dept-8002" />
         <module name="SpringCloud-provider-dept-8003" />
+        <module name="SpringCloud-consumer-dept-feign" />
         <module name="SpringCloud-consumer-dept-8080" />
         <module name="SprngCloud-consumer-dept-8080" />
       </profile>
