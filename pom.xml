@@ -20,6 +20,10 @@
         <module>SpringCloud-provider-dept-hystrix-8001</module>
         <module>SpringCloud-consumer-hystrix-dashboard</module>
         <module>SpringCloud-Zuul-9527</module>
+        <module>SpringCloud-Config-server-3344</module>
+        <module>SpringCloud-Config-Client-3355</module>
+        <module>SpringCloud-config-eureka-7001</module>
+        <module>SpringCloud-Config-dept-8001</module>
     </modules>
 
     <!--打包方式 pom-->

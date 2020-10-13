@@ -1,0 +1,13 @@
+server:
+  port: 3344
+spring:
+  application:
+    name: springcloud-config-server
+  #连接远程仓库
+  #通过config-server, 可以访问其中的资源以及配置
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/hello-world-cn/Spring-Cloud-Config.git
+          default-label: main

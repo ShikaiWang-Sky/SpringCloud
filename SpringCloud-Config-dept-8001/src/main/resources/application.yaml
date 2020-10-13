@@ -1,0 +1,4 @@
+#Spring的配置
+spring:
+  application:
+    name: springcloud-provider-dept

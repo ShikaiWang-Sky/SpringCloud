@@ -1,0 +1,8 @@
+# 系统级别的配置, 防止与远程冲突, 这里级别最高
+spring:
+  cloud:
+    config:
+      uri: http://localhost:3344  #连接到本地的Config Server, 通过服务端连接到github
+      name: config-dept #需要从git上读取的资源名称, 不需要后缀
+      profile: test
+      label: main

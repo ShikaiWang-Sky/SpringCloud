@@ -16,10 +16,14 @@
         <module name="SpringCloud-provider-dept-8003" />
         <module name="SpringCloud-consumer-dept-feign" />
         <module name="SprngCloud-consumer-dept-8080" />
+        <module name="SpringCloud-Config-dept-8001" />
         <module name="SpringCloud-Eureka-7001" />
         <module name="SpringCloud-Eureka-7003" />
+        <module name="SpringCloud-config-eureka-7001" />
         <module name="SpringCloud-Eureka-7002" />
+        <module name="SpringCloud-Config-server-3344" />
         <module name="SpringCloud-API" />
+        <module name="SpringCloud-Config-Client-3355" />
         <module name="SpringCloud-consumer-dept-8080" />
       </profile>
     </annotationProcessing>
