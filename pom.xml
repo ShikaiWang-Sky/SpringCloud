@@ -19,6 +19,7 @@
         <module>SpringCloud-consumer-dept-feign</module>
         <module>SpringCloud-provider-dept-hystrix-8001</module>
         <module>SpringCloud-consumer-hystrix-dashboard</module>
+        <module>SpringCloud-Zuul-9527</module>
     </modules>
 
     <!--打包方式 pom-->
